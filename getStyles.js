@@ -3,13 +3,12 @@ const html = require('yo-yo')
 
 const url = 'https://rogue-beers.herokuapp.com/api/v1/styles'
 
-function getBeers(dispatch) {
-  dispatch({type: 'TOGGLE_LOADING'})
+function getStyles(dispatch) {
   request
     .get(url)
     .end((err, res) => {
-      dispatch({type: 'GET_BEERS', payload: res.body.beers})
+      dispatch({type: 'GET_STYLES', payload: res.body.styles})
     })
 }
 
-module.exports = getBeers
+module.exports = getStyles

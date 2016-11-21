@@ -9,6 +9,9 @@ function reducer(state, action) {
     case 'GET_BEERS':
       newState.beers = action.payload
       return newState
+    case 'GET_STYLES':
+      newState.styles = action.payload
+      return newState
     case 'TOGGLE_LOADING':
       newState.isLoading = !newState.isLoading
       return newState

@@ -8,7 +8,7 @@ module.exports = (beer, dispatch) => {
         <div>Name: ${name}</div>
         <div>Brewery: ${brewery}</div>
         <div>Country: ${country}</div>
-        <div>Style: ${style}</div>
+        <div>Style: <button>${style}</button></div>
         <div>abv: ${abv}</div>
       </div>
     </div>
