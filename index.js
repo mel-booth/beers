@@ -7,6 +7,7 @@ const beer = require('./views/beer')
 const beers = require('./views/beers')
 
 const initialState = {
+
   beers: [],
   isLoading: false
 }
@@ -18,7 +19,9 @@ const main = document.querySelector('main')
 const app = document.createElement('div')
 main.appendChild(app)
 
-redux.subscribe(() => {
-  const state = redux.getState()
+store.subscribe(() => {
+  const state = store.getState()
   html.update(app, beers(state, dispatch))
 })
+
+dispatch({type: 'INIT'})

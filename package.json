@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "budo . -d --serve bundle.js --live",
-    "test": "browserify test/index.js | node | tap-spec"
+    "test": "browserify test/test.js | node | tap-spec"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,8 @@
     "babelify": "^7.3.0",
     "browserify": "^13.1.1",
     "budo": "^9.2.2",
+    "clone": "^2.0.0",
+    "deep-freeze": "0.0.1",
     "redux": "^3.6.0",
     "superagent": "^3.0.0",
     "tap-spec": "^4.1.1",
