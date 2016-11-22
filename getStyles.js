@@ -7,7 +7,8 @@ function getStyles(dispatch) {
   request
     .get(url)
     .end((err, res) => {
-      dispatch({type: 'GET_STYLES', payload: res.body.styles})
+      // dispatch({type: 'GET_STYLES', payload: res.body.style})
+      console.log(res.body.styles);
     })
 }
 

@@ -38,8 +38,6 @@ test(function(t){
       "abv": "7.2%"
     }]
   }
-
-  const styles = styles: [ {description: 'High in starting gravity and alcoholic strength, this style is somewhat diverse. Some American malt liquors are just slightly stronger than American lagers, while others approach bock strength. Some residual sweetness is perceived. Hop rates are very low, contributing little bitterness and virtually no hop aroma or flavor. Perception of sweet-fruity esters and complex alcohols (though not solvent-like) are acceptable at low levels. Chill haze and diacetyl should not be perceived.'} ]
   //action
   const actual = reducer(state, {type: 'INIT'})
 
@@ -49,3 +47,15 @@ test(function(t){
   t.end()
 
 })
+
+// test(function(t){
+//   const styles = [{description: 'High in starting gravity and alcoholic strength, this style is somewhat diverse. Some American malt liquors are just slightly stronger than American lagers, while others approach bock strength. Some residual sweetness is perceived. Hop rates are very low, contributing little bitterness and virtually no hop aroma or flavor. Perception of sweet-fruity esters and complex alcohols (though not solvent-like) are acceptable at low levels. Chill haze and diacetyl should not be perceived.'}]
+//
+//   const expectedStyles = {styles:[{description: 'High in starting gravity and alcoholic strength, this style is somewhat diverse. Some American malt liquors are just slightly stronger than American lagers, while others approach bock strength. Some residual sweetness is perceived. Hop rates are very low, contributing little bitterness and virtually no hop aroma or flavor. Perception of sweet-fruity esters and complex alcohols (though not solvent-like) are acceptable at low levels. Chill haze and diacetyl should not be perceived.'}]}
+//
+//   const actualStyle = reducer(styles, {type: 'GET_STYLES', payload: styles})
+//
+//   t.looseEquals(actualStyle, expectedStyles, "style comparison")
+//   t.end()
+//
+// })

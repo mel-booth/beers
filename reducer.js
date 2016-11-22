@@ -11,7 +11,12 @@ function reducer(state, action) {
       return newState
     case 'GET_STYLES':
       newState.styles = action.payload
+      console.log(newState.styles);
       return newState
+    case 'SHOW_STYLE':
+      newState.showStyles = !newState.showStyles
+      return newState
+    case
     case 'TOGGLE_LOADING':
       newState.isLoading = !newState.isLoading
       return newState
